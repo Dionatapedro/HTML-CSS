@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinânima</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes
+        ou simplismente aumente e diminua o tamanho do seu navegador.
+    </p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png"
+        type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexivel">
+    </picture>
+
+    <h1>Reproduzinho audios</h1>
+    <p>vamos aprender a reproduzir audios em MP3</p>
+ <audio preload="metadata" controls>
+    <source src="mideas/Reuben's Train - Nat Keefe with The Bow Ties.mp3" type="audio.mpeg">
+    <source src="mideas/Reuben's Train - Nat Keefe with The Bow Ties.ogg" type="audio.ogg">
+    <source src="mideas/Reuben's Train - Nat Keefe with The Bow Ties.wav" type="audio.wav">
+     </audio>
+     <p>Infelizmente seu navegador não consegue reproduzir audip</p>
+    <p><a href="mideas/Reuben's Train - Nat Keefe with The Bow Ties.mp3" target="_blank">Clique aqui para baixar o audio</a></p>
+    </body>
+</html>
