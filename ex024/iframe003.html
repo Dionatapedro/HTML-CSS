@@ -7,14 +7,45 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+            
         }
 
         iframe#tela {
-            width: 95vw;
-            height: 400px;
+            width: 80vw;
+            height: 550px;
+            display: block;
+            margin: auto;
             border: 2px solid black;
 
         }
+
+        h1 {
+            text-align: center;
+            font-size: 5em;
+            color: rgb(70, 2, 2);
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        p.lorem {
+            margin: 30px;
+            line-height: 1.2em;
+        }
+        
+        #menu ul li {
+            display: inline;
+            margin: 0px 100px 0px 0px ;
+        }
+        
+        #menu ul li:hover {
+            background-color: rgba(117, 11, 11, 0.452);
+            text-decoration: underline;
+            padding: 2px;
+        }
+
     </style>
 </head>
 <body>
@@ -22,18 +53,23 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla omnis inventore deleniti recusandae quasi, delectus explicabo dignissimos laudantium est ipsum itaque vel culpa accusantium ad quos exercitationem et assumenda. Accusamus?</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ullam ex excepturi officia, recusandae qui sed molestiae veniam illo! Qui, tempora ratione placeat commodi ullam ipsa. Delectus adipisci expedita quasi?</p>
 
-    <ul>
-        <li><a href="paginas-extras/pagina001.html" target="frame">Primeira página</a></li>
-        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
-        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
-    </ul>
+    <nav id="menu">
+        <ul>
+            <li><a href="https://www.cursoemvideo.com/" target="frame">Primeira página</a></li>
+            <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+            <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+        </ul>
+    </nav>
 
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt inventore accusantium temporibus atque illo. Quasi repellat quos animi nesciunt quis voluptates, omnis unde, excepturi itaque voluptate corporis earum similique consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt officia sequi corporis, delectus ratione saepe dicta quibusdam aliquam accusamus vel deleniti quos explicabo sed sit cupiditate, iste minima. Unde, maxime? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus architecto, dolorum rem sapiente maxime laudantium laboriosam perspiciatis at quo cumque error, aut dolore! Vero quam molestias autem inventore at nisi?</p>
+    <p class="lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt inventore accusantium temporibus atque illo. Quasi repellat quos animi nesciunt quis voluptates, omnis unde, excepturi itaque voluptate corporis earum similique consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt officia sequi corporis, delectus ratione saepe dicta quibusdam aliquam accusamus vel deleniti quos explicabo sed sit cupiditate, iste minima. Unde, maxime? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus architecto, dolorum rem sapiente maxime laudantium laboriosam perspiciatis at quo cumque error, aut dolore! Vero quam molestias autem inventore at nisi?</p>
 
-    <iframe id="tela" name="frame" src="" >
+    <iframe id="tela" name="frame" srcdoc="'<h1>Testando pra ver se vai dar certo</h1> 
+        <p>Achei meio estranho desta forma, porem um conhecimento interessante <br>
+        Clique no menu acima para mais detalhes</p>'" >
         <p>Infelizmente seu navegador não é compativel</p>
     </iframe>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse adipisci mollitia, dicta vitae velit voluptatem laudantium autem quisquam. Et voluptatem sequi officiis quia maxime deserunt numquam exercitationem, esse dolores quibusdam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis beatae id voluptas? Suscipit neque cupiditate excepturi iusto, provident reprehenderit ducimus maiores in accusamus ipsa quas impedit eius ipsum consequatur autem.</p>
+    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse adipisci mollitia, dicta vitae velit voluptatem laudantium autem quisquam. Et voluptatem sequi officiis quia maxime deserunt numquam exercitationem, esse dolores quibusdam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis beatae id voluptas? Suscipit neque cupiditate excepturi iusto, provident reprehenderit ducimus maiores in accusamus ipsa quas impedit eius ipsum consequatur autem.</p>
+    
 </body>
 </html>
